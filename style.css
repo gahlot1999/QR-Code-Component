@@ -1,0 +1,120 @@
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-grey: hsl(212, 45%, 89%);
+  --clr-greyish-blue: hsl(220, 15%, 65%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+
+  --ff-primary: 'Outfit', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h2 {
+  line-height: 1.3;
+}
+/* CSS RESET */
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: 1.5rem;
+  color: var(--clr-greyish-blue);
+  background-color: var(--clr-light-grey);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  text-align: center;
+  background-color: var(--clr-white);
+  border-radius: 1.4rem;
+  margin: 2.8rem;
+  padding: 1.4rem;
+  max-width: 300px;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .product {
+    max-width: 250px;
+  }
+}
+
+.product__content {
+  padding-inline: 1.4rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.product__title {
+  color: var(--clr-dark-blue);
+}
+
+/* Image */
+.product__img {
+  border-radius: 1rem;
+}
